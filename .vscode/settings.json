@@ -1,0 +1,7 @@
+{
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "vscode_custom_css.imports": [
+    "file:///Users/Omar/Documents/Projects/sparesh-api/.vscode/styles.css"
+  ]
+}
