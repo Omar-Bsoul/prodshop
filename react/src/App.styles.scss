@@ -1,0 +1,52 @@
+@import url(https://fonts.googleapis.com/css?family=Gayathri&display=swap);
+
+body {
+  font-family: 'Gayathri', sans-serif;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba($color: #ffffff, $alpha: 0.35);
+  border-radius: 4px;
+}
+
+.no-select,
+.no-select:focus {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline-style: none;
+}
+
+.container {
+  height: calc(100vh - 82px);
+  margin: 82px auto 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.center-text {
+  text-align: center;
+  margin: auto auto;
+}

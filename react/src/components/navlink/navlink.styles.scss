@@ -1,0 +1,11 @@
+.navbar-link-container {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 12px;
+  cursor: pointer;
+
+  & .navbar-link {
+    text-decoration: none;
+    color: rgba($color: #ffffff, $alpha: 0.85);
+  }
+}

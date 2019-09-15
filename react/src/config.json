@@ -1,0 +1,38 @@
+{
+  "baseURL": "/api",
+  "menuItems": [
+    {
+      "text": "Home",
+      "link": "/"
+    },
+    {
+      "text": "Shop",
+      "link": "/shop"
+    },
+    {
+      "text": "Sign In",
+      "link": "/sign-in",
+      "condition": "!auth"
+    },
+    {
+      "text": "Sign Up",
+      "link": "/sign-up",
+      "condition": "!auth"
+    },
+    {
+      "text": "Cart",
+      "link": "/cart",
+      "condition": "auth"
+    },
+    {
+      "text": "Account",
+      "link": "/account",
+      "condition": "auth"
+    },
+    {
+      "text": "Sign Out",
+      "link": "/sign-out",
+      "condition": "auth"
+    }
+  ]
+}

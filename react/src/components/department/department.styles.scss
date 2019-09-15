@@ -1,0 +1,60 @@
+.department {
+  width: 240px;
+  height: 240px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 28px auto 28px;
+  grid-template-rows: auto auto auto;
+  cursor: pointer;
+
+  & .department-image {
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 4;
+    grid-row: 1 / 4;
+    background-position: center;
+    background-size: cover;
+    transition: transform 1s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  }
+
+  & .department-content {
+    padding: 4px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba($color: #000000, $alpha: 0.25);
+    border-radius: 4px;
+    background-color: #fff;
+    opacity: 0.7;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    & .department-title {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 6px;
+      font-size: 22px;
+      color: #000000;
+    }
+
+    & .department-subtitle {
+      font-weight: lighter;
+      font-size: 16px;
+    }
+  }
+
+  &:hover {
+    & .department-image {
+      transform: scale(1.1);
+      transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    }
+
+    & .department-content {
+      opacity: 0.9;
+      transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+  }
+}

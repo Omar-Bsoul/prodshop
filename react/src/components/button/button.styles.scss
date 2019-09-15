@@ -1,0 +1,30 @@
+.button {
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  margin: 4px;
+  font-weight: bold;
+  color: #252525;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.15s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+  cursor: pointer;
+
+  &:hover {
+    background-color: #a0a0a0;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: #252525;
+    color: white;
+  }
+
+  &.btn-big {
+    width: 100%;
+    padding: 16px;
+    margin: 0;
+  }
+}
